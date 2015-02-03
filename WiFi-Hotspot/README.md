@@ -23,7 +23,7 @@ sudo apt-get install hostapd isc-dhcp-server
 
 ```bash
 sudo sed -i.bak 's/option domain-name/# option domain-name/' /etc/dhcp/dhcpd.conf
-sudo sed -i.bak 's/#authoritative;/authoritative;/ /etc/dhcp/dhcpd.conf
+sudo sed -i.bak 's/#authoritative;/authoritative;/' /etc/dhcp/dhcpd.conf
 echo "
 subnet 192.168.42.0 netmask 255.255.255.0 {
 	range 192.168.42.10 192.168.42.50;
