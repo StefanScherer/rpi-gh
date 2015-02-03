@@ -69,7 +69,7 @@ rsn_pairwise=CCMP" | sudo tee -a /etc/hostapd/hostapd.conf
 sudo sed -i.bak 's,#DAEMON_CONF="",DAEMON_CONF="/etc/hostapd/hostapd.conf",' /etc/default/hostapd
 ```
 
-# NAT konfigurieren
+## NAT konfigurieren
 
 ```bash
 echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.conf
@@ -79,4 +79,29 @@ sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -
 sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 echo "up iptables-restore < /etc/iptables.ipv4.nat" | sudo tee -a /etc/network/interfaces
+```
+
+## Update hostapd
+
+```bash
+wget http://adafruit-download.s3.amazonaws.com/adafruit_hostapd_14128.zip
+unzip adafruit_hostapd_14128.zip
+sudo mv /usr/sbin/hostapd /usr/sbin/hostapd.ORIG
+sudo mv hostapd /usr/sbin
+sudo chmod 755 /usr/sbin/hostapd
+```
+
+## Erster Test
+
+```bash
+sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
+```
+
+# Automatik
+
+```bash
+sudo service hostapd start
+sudo service isc-dhcp-server start
+sudo update-rc.d hostapd enable
+sudo update-rc.d isc-dhcp-server enable
 ```
