@@ -177,11 +177,11 @@ background-image: url(http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg)
 # Raspberry Pi im Unterricht
 
 .whitebg85[
-#### Vortrag von Ingo Stein (20 min.)
+### Vortrag von Ingo Stein (20 min.)
 * https://www.youtube.com/watch?v=w_-Es4Muh7w)
 * http://blog.ingostein.at/minicomputer-raspberry-pi-im-unterricht/
 
-#### Vorträge, Videos, Artikel von Tobias Hübner
+### Vorträge, Videos, Artikel von Tobias Hübner
 * https://medienistik.wordpress.com/tag/raspberry-pi/
 * http://www.medienistik.de/Themenheft_RaspberryPi.pdf
 
@@ -190,7 +190,6 @@ background-image: url(http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg)
 ]
 
 ---
-
 
 background-image: url(http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg)
 
@@ -207,6 +206,53 @@ background-image: url(http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg)
 * https://www.youtube.com/user/GeekGurlDiaries - Girls can be geeks too!
 * https://learn.adafruit.com/category/raspberry-pi - Projekte, Anleitungen
 * http://www.themagpi.com - Magazin
+]
+
+---
+
+class: bottom, right, bluebg
+
+background-image: url(http://newsletter.franzis.de/custloads/275222640/md_718274.jpg)
+
+.offset.whitebg85[# Literatur
+]
+
+---
+
+class: center
+
+background-image: url(http://t3n.de/news/wp-content/uploads/2012/07/raspberry-pi-lego-case-1_1_1.png)
+
+.whitebg85[
+.invisible[#
+
+#
+
+#
+
+]
+
+# Danke
+
+.invisible[#
+
+]
+
+# http://tinyurl.com/rpi-gh
+
+.invisible[#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+]
 ]
 
 ---
@@ -228,4 +274,6 @@ background-image: url(http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg)
 * http://static.neuerdings.com/1397172709/jasper-website.jpg
 * http://www.finventing.com/wp-content/uploads/2013/01/06-IMG_8831.jpg
 * http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg
+* http://newsletter.franzis.de/custloads/275222640/md_718274.jpg
+* http://t3n.de/news/wp-content/uploads/2012/07/raspberry-pi-lego-case-1_1_1.png
 ]
