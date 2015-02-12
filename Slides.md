@@ -185,8 +185,9 @@ background-image: url(http://www.hbbk-muenster.de/img/aktuelles/2014-06-30.jpg)
 * https://medienistik.wordpress.com/tag/raspberry-pi/
 * http://www.medienistik.de/Themenheft_RaspberryPi.pdf
 
-#### Projektkurs Raspberry Pi
+#### Projektkurse Raspberry Pi
 * http://www.anne-frank-gymnasium.de/?page_id=1902
+* http://www.hbbk-muenster.de/?mainitem=10&subitem=101301&aktuelles_id=200
 ]
 
 ---
@@ -238,11 +239,11 @@ background-image: url(http://t3n.de/news/wp-content/uploads/2012/07/raspberry-pi
 
 ]
 
-# http://bit.do/rpi-gh
+# Folien: http://bit.do/rpi-gh
+
+# Source: https://github.com/StefanScherer/rpi-gh
 
 .invisible[#
-
-#
 
 #
 
