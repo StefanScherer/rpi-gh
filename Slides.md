@@ -1,4 +1,3 @@
-style: https://raw.githubusercontent.com/StefanScherer/rpi-gh/master/style.css
 class: top, center
 
 background-image: url(https://rasplapse.files.wordpress.com/2012/06/pi_white.jpg)
