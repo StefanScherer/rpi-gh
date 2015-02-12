@@ -27,7 +27,7 @@ Stefan Scherer
 
 13.02.2015
 
-http://tinyurl.com/rpi-gh
+http://bit.do/rpi-gh
 
 .grayfg[Blättern mit ← →]
 ---
@@ -238,7 +238,7 @@ background-image: url(http://t3n.de/news/wp-content/uploads/2012/07/raspberry-pi
 
 ]
 
-# http://tinyurl.com/rpi-gh
+# http://bit.do/rpi-gh
 
 .invisible[#
 
