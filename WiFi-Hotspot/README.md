@@ -2,7 +2,7 @@
 
 Aus der Anleitung [https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview](https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview) wird aus dem Raspberry Pi ein WiFi Hotspot.
 
-Benötigte Teile: Ein Edimax WiFi USB Dongle. Vor dem Booten einfach den USB Dongle einstecken.
+Benötigte Teile: Ein **Edimax WiFi USB Dongle**. Vor dem Booten einfach den USB Dongle einstecken.
 
 ## Test
 
@@ -44,9 +44,16 @@ sudo sed -i.bak 's/INTERFACES=""/INTERFACES="wlan0"/' /etc/default/isc-dhcp-serv
 
 ```bash
 sudo ifdown wlan0
-echo "iface wlan0 inet static
+echo "auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+allow hotplug eth0
+
+allow-hotplug wlan0
+iface wlan0 inet static
   address 192.168.42.1
-  netmask 255.255.255.0" | sudo tee -a /etc/network/interfaces
+  netmask 255.255.255.0" | sudo tee /etc/network/interfaces
 sudo ifconfig wlan0 192.168.42.1
 ```
 
@@ -55,17 +62,22 @@ sudo ifconfig wlan0 192.168.42.1
 ```bash
 echo "interface=wlan0
 driver=rtl871xdrv
-ssid=Pi_AP
+bridge=br0
+ctrl_interface=/var/run/hostapd
+ctrl_interface_group=0
+ssid=pi3-rpi-gh
 hw_mode=g
 channel=6
 macaddr_acl=0
-auth_algs=1
+auth_algs=3
 ignore_broadcast_ssid=0
 wpa=2
-wpa_passphrase=Raspberry
+wpa_passphrase=Raspberry_GH
 wpa_key_mgmt=WPA-PSK
-wpa_pairwise=TKIP
-rsn_pairwise=CCMP" | sudo tee -a /etc/hostapd/hostapd.conf
+wpa_pairwise=CCMP
+rsn_pairwise=CCMP
+beacon_int=100
+wmm_enabled=1" | sudo tee /etc/hostapd/hostapd.conf
 sudo sed -i.bak 's,#DAEMON_CONF="",DAEMON_CONF="/etc/hostapd/hostapd.conf",' /etc/default/hostapd
 ```
 
@@ -87,7 +99,9 @@ echo "up iptables-restore < /etc/iptables.ipv4.nat" | sudo tee -a /etc/network/i
 wget http://adafruit-download.s3.amazonaws.com/adafruit_hostapd_14128.zip
 unzip adafruit_hostapd_14128.zip
 sudo mv /usr/sbin/hostapd /usr/sbin/hostapd.ORIG
-sudo mv hostapd /usr/sbin
+sudo mv hostapd /usr/sbin/hostapd.edimax
+sudo ln -sf /usr/sbin/hostapd.edimax /usr/sbin/hostapd
+sudo chown root.root /usr/sbin/hostapd
 sudo chmod 755 /usr/sbin/hostapd
 ```
 
