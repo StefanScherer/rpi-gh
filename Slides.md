@@ -241,7 +241,7 @@ background-image: url(http://t3n.de/news/wp-content/uploads/2012/07/raspberry-pi
 
 # Folien: http://bit.do/rpi-gh
 
-# Source: https://github.com/StefanScherer/rpi-gh
+### Source: https://github.com/StefanScherer/rpi-gh
 
 .invisible[#
 
