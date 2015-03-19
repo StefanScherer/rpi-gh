@@ -97,6 +97,7 @@ echo "up iptables-restore < /etc/iptables.ipv4.nat" | sudo tee -a /etc/network/i
 
 ```bash
 wget http://adafruit-download.s3.amazonaws.com/adafruit_hostapd_14128.zip
+apt-get install -y unzip
 unzip adafruit_hostapd_14128.zip
 sudo mv /usr/sbin/hostapd /usr/sbin/hostapd.ORIG
 sudo mv hostapd /usr/sbin/hostapd.edimax
