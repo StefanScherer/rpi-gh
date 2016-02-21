@@ -115,30 +115,30 @@ background-image: url(http://cdn.instructables.com/F9U/HI1U/HELXCM0F/F9UHI1UHELX
 ---
 class: bottom, right
 
-background-image: url(https://makezineblog.files.wordpress.com/2014/02/img_3095.jpg)
+background-image: url(http://i0.wp.com/cdn.makezine.com/uploads/2014/02/img_3095.jpg?zoom=2&resize=620%2C930)
 
 
 # .whitefg[Mission Con]trol Desk
 
 
-.whitebg85[http://makezine.com/video/making-fun-mission-control-desk/]
+.whitebg85[http://makezine.com/2014/02/19/making-fun-mission-control-desk/]
 
 ---
 class: bottom, right
 
-background-image: url(https://makezineblog.files.wordpress.com/2014/02/img_3096.jpg)
+background-image: url(http://i0.wp.com/cdn.makezine.com/uploads/2014/02/img_3096.jpg?zoom=2&resize=620%2C930)
 
 
 # .whitefg[Mission Con]trol Desk
 
 
-.whitebg85[http://makezine.com/video/making-fun-mission-control-desk/]
+.whitebg85[http://makezine.com/2014/02/19/making-fun-mission-control-desk/]
 
 ---
 
 class: bottom, left
 
-background-image: url(https://makezineblog.files.wordpress.com/2014/04/p1290524.jpg)
+background-image: url(http://i2.wp.com/cdn.makezine.com/uploads/2014/04/p1290524.jpg?zoom=2&resize=620%2C465)
 
 
 # Lego Bookreader
