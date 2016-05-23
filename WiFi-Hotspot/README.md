@@ -16,7 +16,7 @@ Zeigt das Gerät **wlan0** an.
 
 ```bash
 sudo apt-get update
-sudo apt-get install hostapd isc-dhcp-server
+sudo apt-get install -y hostapd isc-dhcp-server
 ```
 
 ## DHCP Server einrichten
